@@ -9,12 +9,12 @@
     
 </body>
 <script>
-    const match = location.pathname.match(/^\/(\d+)$/)
+    const match = location.pathname.match(/^\/kgd\/(\d+)$/)
 
     if (match) {
-        location.replace(`/?id=${match[1]}`);
+        location.replace(`/kgd?id=${match[1]}`);
     } else {
-        location.replace("/")
+        location.replace("/kgd")
     }
 </script>
 </html>
